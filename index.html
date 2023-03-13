@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<title>Juniorstarsoccer</title>
+
+<!-- Fav Icon -->
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+<style>
+    .bigBackground {
+        background-color: rgba(0,0,0,.7);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 1000;
+        display: none;
+    }
+    .quickInfo {
+        background-color: white;
+        margin: 10% auto;
+        width: 46%;
+        padding: 1%;      
+        border-radius: 5%;
+    }
+    .quickInfo video {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .quickInfo p {
+        color: black;
+    }
+    .quickInfo h3 {
+        text-align: left;
+        font-size: 25px;
+    }
+    .quickInfo h1 {
+        color: rgb(4, 101, 38);
+        font-size: 30px;
+    }
+    #times {
+        color: white;
+         font-size: 5vh;
+          text-align:right; 
+          margin-left:1300px;
+           cursor:pointer;
+    }
+    @media screen and (max-width:400px) {
+        .quickInfo {
+            width: 80%;
+            padding: 2%;
+            margin: 5% auto;
+
+        }
+        .quickInfo video {
+            width: 400px;
+            height: 300;
+        }
+        .quickInfo h1 {
+            font-size:20px;
+            text-align: center;
+        }
+        .quickInfo h3 {
+            font-size: 20px;
+        }
+        #times {
+            margin-left: 380px;
+        }
+    }
+</style>
+
+<!-- Stylesheets -->
+<link href="assets/css/font-awesome-all.css" rel="stylesheet">
+<link href="assets/css/flaticon.css" rel="stylesheet">
+<link href="assets/css/owl.css" rel="stylesheet">
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="assets/css/animate.css" rel="stylesheet">
+<link href="assets/css/color.css" rel="stylesheet">
+<link href="assets/css/global.css" rel="stylesheet">
+<link href="assets/css/elpath.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
+
+</head>
+
+
+
+<!-- page wrapper -->
+<body>
+    
+
+    <div class="boxed_wrapper">
+
+
+        <!-- mouse-pointer -->
+        <div class="mouse-pointer" id="mouse-pointer">
+            <div class="icon"><i class="far fa-angle-left"></i><i class="far fa-angle-right"></i></div>
+        </div>
+        <!-- mouse-pointer end -->
+        <!-- preloader -->
+        <div class="loader-wrap">
+            <div class="preloader">
+                <div class="preloader-close">x</div>
+                <div id="handle-preloader" class="handle-preloader">
+                    <div class="animation-preloader">
+                        <div class="spinner">
+                            <img src="assets/images/logo.png" alt="">
+                        </div>
+                        <div class="txt-loading">
+                            <span data-text-preloader="J" class="letters-loading">
+                                J
+                            </span>
+                            <span data-text-preloader="S" class="letters-loading">
+                                S
+                            </span>
+                            <span data-text-preloader="S" class="letters-loading">
+                                S
+                            </span>
+                            <span data-text-preloader="I" class="letters-loading">
+                                I
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- preloader end -->
+        <!--Search Popup-->
+        <div id="search-popup" class="search-popup">
+            <div class="popup-inner">
+                <div class="upper-box clearfix">
+                    <figure class="logo-box pull-left"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
+                    <div class="close-search pull-right"><span class="icon-179"></span></div>
+                </div>
+                <div class="overlay-layer"></div>
+                <div class="auto-container">
+                    <div class="search-form">
+                        <form method="post" action="http://azim.commonsupport.com/Atrix/index.html">
+                            <div class="form-group">
+                                <fieldset>
+                                    <input type="search" class="form-control" name="search-input" value="" placeholder="Type your keyword and hit" required>
+                                    <button type="submit"><i class="icon-1"></i></button>
+                                </fieldset>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- main header -->
+        <header class="main-header">
+            <!-- header-top-one -->
+            <div class="header-top-one p_relative d_block" style="display:none">
+                <div class="auto-container">
+                    <div class="top-inner clearfix p_relative">
+                        <div class="shape p_absolute t_0" style="background-image: url(assets/images/shape/shape-1.png);"></div>
+                        <div class="top-left pull-left">
+                            <ul class="social-links clearfix">
+                                <li class="p_relative d_iblock fs_16 float_left mr_25 lh_55">Follow Us:</li>
+                                <li class="p_relative d_iblock fs_16 float_left mr_25 lh_55"><a href="index.html" class="p_relative d_iblock fs_16"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="p_relative d_iblock fs_16 float_left mr_25 lh_55"><a href="index.html" class="p_relative d_iblock fs_16"><i class="fab fa-twitter"></i></a></li>
+                                <li class="p_relative d_iblock fs_16 float_left mr_25 lh_55"><a href="index.html" class="p_relative d_iblock fs_16"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="p_relative d_iblock fs_16 float_left lh_55"><a href="index.html" class="p_relative d_iblock fs_16"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="top-right pull-right">
+                            <ul class="info clearfix">
+                                <li class="search-box-outer search-toggler p_relative d_iblock float_left mr_60 lh_55">
+                                    <i class="icon-1"></i>
+                                </li>
+                                <li class="p_relative d_iblock float_left mr_60 lh_55 pl_25 fs_16">
+                                    <i class="icon-2"></i>
+                                    <p>Call: <a href="tel:123045615523">+1 (230)- 456-155-23</a></p>
+                                </li>
+                                <li class="p_relative d_iblock float_left lh_55 pl_25 fs_16">
+                                    <i class="icon-3"></i>
+                                    <p>Email: <a href="mailto:sample@example.com">sample@example.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header-lower -->
+            <div class="header-lower" style="position:absolute;width:100%">
+                <div class="auto-container">
+                    <div class="outer-box">
+                        <div class="logo-box">
+                            <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
+                        </div>
+                        <div class="menu-area clearfix">
+                            <!--Mobile Navigation Toggler-->
+                            <div class="mobile-nav-toggler">
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                            </div>
+                            <nav class="main-menu navbar-expand-md navbar-light">
+                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix home-menu">
+                                        <li class="current ">
+                                            <a href="index.html">Home</a>
+
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="about.html">About</a>
+
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="service.html">Service</a>
+
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="contact.html">Contact</a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="btn-box">
+                            <a href="register.html" class="theme-btn theme-btn-one">Register<i class="icon-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--sticky Header-->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="outer-box">
+                        <div class="logo-box">
+                            <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="" style="height:60px"></a></figure>
+                        </div>
+                        <div class="menu-area clearfix">
+                            <nav class="main-menu clearfix">
+                                <!--Keep This Empty / Menu will come through Javascript-->
+                            </nav>
+                        </div>
+                        <div class="btn-box">
+                            <a href="register.html" class="theme-btn theme-btn-one">Register<i class="icon-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- main-header end -->
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo.png" alt="" style="height:60px"></a></div>
+                <div class="menu-outer"></div>
+                <div class="contact-info">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>YU-DEE PLAZA,PLOT 250,11 ROAD, GEMADE/GOWON ESTATE. IPAJA LAGOS NIGERIA</li>
+                        <li><a href="tel:+2349168935430">+2349168935430</a></li>
+                        <li><a href="mailto:info@juniorstarsocer.com">info@juniorstarsocer.com</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
+                        <li><a href="index.html"><span class="fab fa-pinterest-p"></span></a></li>
+                        <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
+                        <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- End Mobile Menu -->
+        <!-- banner-section -->
+        <section class="slider-one centred p_relative">
+            <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
+                <div class="slide-item p_relative pt_140 pb_170">
+                    <div class="shape-layer">
+                        <div class="shape-1 p_absolute l_0 z_1" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+                        <div class="shape-2 p_absolute l_0 t_0 z_1" style="background-image: url(assets/images/shape/shape-3.png);"></div>
+                        <div class="shape-3 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-4.png);"></div>
+                        <div class="shape-4 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                    </div>
+                    <div class="image-layer p_absolute" style="background-image: url(assets/images/banner/banner1.jpg)"></div>
+                    <div class="auto-container">
+                        <div class="content-box p_relative d_block z_5">
+                            <h2 class="p_relative d_iblock fw_bold fs_80 lh_70 mb_25"><span class="slider-text-anim">Reaching out to all talented and skillful footballers</span><br /> <span class="slider-text-anim">all over Africa.</span></h2>
+                            <p class="d_block fs_18 mb_45">creating a funding program for all soccer clubs in Nigeria  <br />by bringing foreign investors to the desk of Nigeria.</p>
+                            <div class="btn-box clearfix">
+                                <a href="index.html" class="theme-btn theme-btn-two"><span data-text="Get Started">Get Started</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item p_relative pt_140 pb_170">
+                    <div class="shape-layer">
+                        <div class="shape-1 p_absolute l_0 z_1" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+                        <div class="shape-2 p_absolute l_0 t_0 z_1" style="background-image: url(assets/images/shape/shape-3.png);"></div>
+                        <div class="shape-3 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-4.png);"></div>
+                        <div class="shape-4 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                    </div>
+                    <div class="image-layer p_absolute" style="background-image:url(assets/images/banner/banner-2.jpg)"></div>
+                    <div class="auto-container">
+                        <div class="content-box p_relative d_block z_5">
+                            <h2 class="p_relative d_iblock fw_bold fs_80 lh_70 mb_25"><span class="slider-text-anim">Reaching out to all talented and skillful footballers</span><br /> <span class="slider-text-anim">all over Africa.</span></h2>
+                            <p class="d_block fs_18 mb_45">Creating a funding program for all soccer clubs in Nigeria <br />by bringing foreign investors to the desk of Nigeria.</p>
+                            <div class="btn-box clearfix">
+                                <a href="index.html" class="theme-btn theme-btn-two"><span data-text="Get Started">Get Started</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item p_relative pt_140 pb_170">
+                    <div class="shape-layer">
+                        <div class="shape-1 p_absolute l_0 z_1" style="background-image: url(assets/images/shape/shape-2.png);"></div>
+                        <div class="shape-2 p_absolute l_0 t_0 z_1" style="background-image: url(assets/images/shape/shape-3.png);"></div>
+                        <div class="shape-3 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-4.png);"></div>
+                        <div class="shape-4 p_absolute r_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                    </div>
+                    <div class="image-layer p_absolute" style="background-image:url(assets/images/banner/banner-3.jpg)"></div>
+                    <div class="auto-container">
+                        <div class="content-box p_relative d_block z_5">
+                            <h2 class="p_relative d_iblock fw_bold fs_80 lh_70 mb_25"><span class="slider-text-anim">Reaching out to all talented and skillful footballers</span><br /> <span class="slider-text-anim">all over Africa.</span></h2>
+                            <p class="d_block fs_18 mb_45">Creating a funding program for all soccer clubs in Nigeria <br />by bringing foreign investors to the desk of Nigeria.</p>
+                            <div class="btn-box clearfix">
+                                <a href="index.html" class="theme-btn theme-btn-two"><span data-text="Get Started">Get Started</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner-section end -->
+        <!-- feature-section -->
+        <section class="feature-one p_relative pt_50 pb_50">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+                        <div class="feature-block-one wow fadeInUp" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_100 pr_50 pt_11 pb_9">
+                                <div class="icon-box p_absolute l_0 t_0 w_80 h_80 lh_80 b_radius_50 text-center fs_45 z_1">
+                                    <div class="icon p_relative d_iblock g_color"><i class="icon-6"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-6.png" alt=""></div>
+                                </div>
+                                <h4 class="d_block fs_20 lh_30 mb_0">FIFA SCOUTING PROGRAM</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+                        <div class="feature-block-one wow fadeInUp" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_100 pr_70 pt_11 pb_9">
+                                <div class="icon-box p_absolute l_0 t_0 w_80 h_80 lh_80 b_radius_50 text-center fs_45 z_1">
+                                    <div class="icon p_relative d_iblock g_color"><i class="icon-14"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-14.png" alt=""></div>
+                                </div>
+                                <h4 class="d_block fs_20 lh_30 mb_0"> COACHING PROGRAM</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
+                        <div class="feature-block-one wow fadeInUp" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_100 pr_50 pt_11 pb_9">
+                                <div class="icon-box p_absolute l_0 t_0 w_80 h_80 lh_80 b_radius_50 text-center fs_45 z_1">
+                                    <div class="icon p_relative d_iblock g_color"><i class="icon-40"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-8.png" alt=""></div>
+                                </div>
+                                <h4 class="d_block fs_20 lh_30 mb_0">TOURIST & TRAVELS</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- feature-section end -->
+        <!-- about-one -->
+        <section class="about-one p_relative">
+            <div class="pattern-layer parallax-scene parallax-scene-2">
+                <div data-depth="0.40" class="pattern-1 p_absolute b_radius_50"></div>
+                <div data-depth="0.50" class="pattern-2 p_absolute w_80 h_80" style="background-image: url(assets/images/shape/shape-7.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="inner-container p_relative sec-pad">
+                    <div class="section-line">
+                        <div class="line line-1 p_absolute"></div>
+                        <div class="line line-2 p_absolute"></div>
+                        <div class="line line-3 p_absolute"></div>
+                    </div>
+                    <div class="row align-items-center clearfix">
+                        <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                            <div class="image_block_one">
+                                <div class="image-box p_relative d_block mr_30 pb_100 pt_130">
+                                    <div class="shape parallax-scene parallax-scene-1">
+                                        <div data-depth="0.40" class="shape-1 p_absolute w_95 h_95" style="background-image: url(assets/images/shape/shape-6.png);"></div>
+                                        <div data-depth="0.50" class="shape-2 p_absolute w_95 h_95" style="background-image: url(assets/images/shape/shape-6.png);"></div>
+                                    </div>
+                                    <figure class="image image-1 p_relative d_block b_radius_10"><img src="assets/images/resource/about-1.jpg" alt=""></figure>
+                                    <div class="video-inner p_absolute r_140 b_0 pt_60 pb_60 text-center b_radius_10 w_200 z_2" style="background-image: url(assets/images/background/background2.jpg);">
+                                        <div class="video-btn">
+                                            <a href="https://youtu.be/h2ApeXiKU7c" class="lightbox-image video-btn p_relative d_iblock w_80 h_80 lh_85 text-center b_radius_50" data-caption=""><i class="icon-10"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="skills-box text-center p_absolute t_0 r_0 b_radius_10 pt_40 pr_40 pl_40 pb_25">
+                                        <div class="row clearfix">
+                                            <div class="col-lg-6 col-md-6 col-sm-12 progress-block">
+                                                <div class="single-progress-box">
+                                                    <div class="box">
+                                                        <div class="piechart p_relative mb_5" data-fg-color="#f4244f" data-value=".95">
+                                                            <span>.95</span>
+                                                        </div>
+                                                        <h6 class="d_block fs_15 lh_20 fw_bold mb_0">Professionalism</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12 progress-block">
+                                                <div class="single-progress-box">
+                                                    <div class="box">
+                                                        <div class="piechart p_relative mb_5" data-fg-color="#f4244f" data-value=".97">
+                                                            <span>.97</span>
+                                                        </div>
+                                                        <h6 class="d_block fs_15 lh_20 fw_bold mb_0">Excellent Delivery</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                            <div class="content_block_one">
+                                <div class="content-box p_relative d_block ml_30">
+                                    <div class="sec-title p_relative d_block mb_20">
+                                        <span class="sub-title p_relative d_iblock fs_15 fw_medium g_color mb_19">About Us</span>
+                                        <h2 class="p_relative d_block fs_40 fw_bold mb_0">The Best Football Agency</h2>
+
+                                    </div>
+                                    <div class="text p_relative d_block mb_25 wow fadeInUp" data-wow-duration="1500ms">
+                                        <p>Junior star soccer ltd is an active football agency, which was first incorporated in Spain, then in Nigeria. The company is a modern, flexible and innovative Service provider with individuality, professionalism and transparency as our cornerstone for service.</p>
+                                    </div>
+                                    <ul class="list-style-one clearfix p_relative d_block mb_30 wow fadeInUp" data-wow-duration="1500ms">
+                                        <li class="p_relative d_block fs_16 lh_25 fw_sbold pull-left pl_35 mb_13">Soccer Scouting</li>
+                                        <li class="p_relative d_block fs_16 lh_25 fw_sbold pull-left pl_35 mb_13">Soccer Screening</li>
+                                        <li class="p_relative d_block fs_16 lh_25 fw_sbold pull-left pl_35 mb_13">Players/  Club Representation</li>
+                                        <li class="p_relative d_block fs_16 lh_25 fw_sbold pull-left pl_35 mb_13">Legal Representation</li>
+                                        <li class="p_relative d_block fs_16 lh_25 fw_sbold pull-left pl_35">International certification</li>
+                                        <li class="p_relative d_block fs_16 lh_25 fw_sbold pull-left pl_35">Training</li>
+                                        <li class="p_relative d_block fs_16 lh_25 fw_sbold pull-left pl_35">Secure Rights of formation for Local clubs</li>
+                                        <li class="p_relative d_block fs_16 lh_25 fw_sbold pull-left pl_35">Recruitment</li>
+
+                                    </ul>
+                                    <div class="btn-box wow fadeInUp" data-wow-duration="1500ms">
+                                        <a href="about.html" class="theme-btn theme-btn-three"><span data-text="Register">Register</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about-one end -->
+        <!-- service-one -->
+        <section class="service-one p_relative sec-pad">
+            <div class="pattern-layer">
+                <div class="pattern-1 p_absolute t_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-9.png);"></div>
+                <div class="pattern-2 p_absolute t_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-10.png);"></div>
+                <div class="pattern-3 p_absolute b_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-11.png);"></div>
+                <div class="pattern-4 p_absolute b_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-12.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="sec-title p_relative d_block mb_50 text-center">
+                    <span class="sub-title p_relative d_iblock fs_15 fw_medium g_color mb_19">SERVICES</span>
+                    <h2 class="p_relative d_block fs_40 fw_bold mb_30">Great Business Solutions <br />System</h2>
+                    <p class="d_block fs_18">Helping grassroots amateur and professionals footballers access their career opportunities  <br />with the overall aim of showcasing them to the world.</p>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_40 pt_50 pr_30 pb_35 b_radius_10 tran_5">
+                                <div class="icon-box p_relative d_iblock mb_30">
+                                    <div class="icon p_relative d_iblock fs_50 g_color tran_5"><i class="icon-11"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-2.png" alt=""></div>
+                                    <div class="icon-shape hero-shape-four p_absolute w_90 h_70"></div>
+                                </div>
+                                <h4 class="p_relative d_block fs_20 lh_30 fw_sbold mb_20"><a href="service-details.html">JUNIOR STAR SOCCER FIFA</a></h4>
+                                <div class="p_relative d_block mb_20" style="height: 106px;overflow-y: auto;">
+                                    <ul>
+                                        <li style="list-style:inside">
+                                            We represent footballers at National, International and Intercontinental level.
+                                        </li>
+                                        <li style="list-style:inside">
+                                            We connect players to local and foreign clubs.
+                                        </li>
+                                        <li style="list-style:inside">
+                                            Provide legal representation to both players and local clubs
+                                            Secure Rights of formation for Local clubs.
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one wow slideInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_40 pt_50 pr_30 pb_35 b_radius_10 tran_5">
+                                <div class="icon-box p_relative d_iblock mb_30">
+                                    <div class="icon p_relative d_iblock fs_50 g_color tran_5"><i class="icon-12"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-3.png" alt=""></div>
+                                    <div class="icon-shape hero-shape-four p_absolute w_90 h_70"></div>
+                                </div>
+                                <h4 class="p_relative d_block fs_20 lh_30 fw_sbold mb_20"><a href="service-details.html">COACHING PROGRAM</a></h4>
+                                <p class="p_relative d_block mb_20" style="height: 125px; overflow-y: auto; ">Learn new methods, techniques and mode of coaching from the best coach trainers in Europe.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one wow slideInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block pl_40 pt_50 pr_30 pb_35 b_radius_10 tran_5">
+                                <div class="icon-box p_relative d_iblock mb_30">
+                                    <div class="icon p_relative d_iblock fs_50 g_color tran_5"><i class="icon-13"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-4.png" alt=""></div>
+                                    <div class="icon-shape hero-shape-four p_absolute w_90 h_70"></div>
+                                </div>
+                                <h4 class="p_relative d_block fs_20 lh_30 fw_sbold mb_20"><a href="service-details.html">JUNIOR STAR SOCCER TRAVELS</a></h4>
+                                <div class="p_relative d_block mb_20" style="height: 106px;overflow-y: auto;">
+                                    <ul>
+                                        <li style="list-style:inside">
+                                            Work visa/ permit
+                                        </li>
+                                        <li style="list-style:inside">
+                                            Study Visa
+                                        </li>
+                                        <li style="list-style:inside">
+                                            Holiday Vacation
+                                        </li>
+                                        <li style="list-style:inside">
+                                            Student holiday Camping
+                                        </li>
+                                        <li style="list-style:inside">
+                                            Summer Soccer Tour
+                                        </li>
+                                        <li style="list-style:inside">
+                                            Business Investment
+                                        </li>
+
+                                        <li style="list-style:inside">
+                                            Family Relocation
+                                        </li>
+                                        <li style="list-style:inside">
+                                            Tourist Visa
+                                        </li>
+                                        <li style="list-style:inside">
+                                            Special Course Training
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- service-one end -->
+        <!-- video-one -->
+        <section class="video-one p_relative pt_140 pb_150">
+            <div class="bg-layer p_absolute l_0 parallax_none parallax-bg" data-parallax='{"y": 100}' style="background-image: url(assets/images/background/background2.jpg); "></div>
+            <div class="pattern-layer">
+                <div class="pattern-1 p_absolute hero-shape-two l_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-13.png);"></div>
+                <div class="pattern-2 p_absolute l_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-14.png);"></div>
+                <div class="pattern-3 p_absolute hero-shape z_1" style="background-image: url(assets/images/shape/shape-15.png);"></div>
+                <div class="pattern-4 p_absolute t_0 r_0 z_1" style="background-image: url(assets/images/shape/shape-16.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="inner-container p_relative d_block">
+                    <div class="video-btn p_absolute r_0 z_1">
+                        <a href="https://youtu.be/InIiIvQgVlM" class="lightbox-image video-btn p_relative d_iblock w_100 h_100 lh_100 text-center b_radius_50 fs_25" data-caption=""><i class="icon-10"></i></a>
+                    </div>
+                    <div class="content-box p_relative d_block z_1">
+                        <h2 class="p_relative d_block fs_40 lh_50 fw_bold mb_10">Services That Lead The Way To fullfilling destiny.</h2>
+                        <p class="fs_17 mb_20">
+                            GET SCOUTED! PLAY YOUR WAY TO EUROPEAN CLUBS THROUGH UPCOMING TRIALS AND COMPETITIONS
+                        </p>
+                        <div class="btn-box">
+                            <a href="https://youtu.be/InIiIvQgVlM" class="theme-btn theme-btn-two lightbox-image"><span data-text="Play Video">Play Video</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- video-one -->
+        <!-- chooseus-one -->
+        <section class="chooseus-one p_relative">
+            <div class="auto-container">
+                <div class="inner-container p_relative sec-pad">
+                    <div class="section-line">
+                        <div class="line line-1 p_absolute"></div>
+                        <div class="line line-2 p_absolute"></div>
+                        <div class="line line-3 p_absolute"></div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                            <div class="content_block_two">
+                                <div class="content-box p_relative d_block mr_130 z_1">
+                                    <div class="sec-title p_relative d_block mb_20">
+                                        <span class="sub-title p_relative d_iblock fs_15 fw_medium g_color mb_19">CHOOSE JSSI</span>
+                                        <h2 class="p_relative d_block fs_40 fw_bold mb_0">Few Reasons Why You Should Choose Us</h2>
+                                    </div>
+                                    <div class="text p_relative d_block mb_25 wow fadeInUp" data-wow-duration="1500ms">
+                                        <p class="fs_18">Fruit is their fill meat, hath abundantly place meat don't stars.</p>
+                                    </div>
+                                    <div class="inner-box p_relative d_block wow fadeInUp" data-wow-duration="1500ms">
+                                        <div class="single-item p_relative d_block pl_80 mb_16">
+                                            <div class="icon-box p_absolute l_0 t_3 w_50 h_50 lh_50 text-center b_radius_50 b_shadow_7">
+                                                <div class="icon p_relative d_iblock g_color"><i class="icon-15"></i></div>
+                                                <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-1.png" alt=""></div>
+                                            </div>
+                                            <h4 class="d_block fs_20 lh_30 mb_4">We make your dream come through</h4>
+                                            <p class="mb_0">We make your dream to be a super star, to play professional soccer in Europe a reality.</p>
+                                        </div>
+                                        <div class="single-item p_relative d_block pl_80 mb_16">
+                                            <div class="icon-box p_absolute l_0 t_3 w_50 h_50 lh_50 text-center b_radius_50 b_shadow_7">
+                                                <div class="icon p_relative d_iblock g_color"><i class="icon-15"></i></div>
+                                                <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-1.png" alt=""></div>
+                                            </div>
+                                            <h4 class="d_block fs_20 lh_30 mb_4">We Scout for the best</h4>
+                                            <p class="mb_0">We scout, screen, give talented and skillful footballers contract from home (your country) to Europe to play professional soccer in Europe.</p>
+                                        </div>
+                                        <div class="single-item p_relative d_block pl_80">
+                                            <div class="icon-box p_absolute l_0 t_3 w_50 h_50 lh_50 text-center b_radius_50 b_shadow_7">
+                                                <div class="icon p_relative d_iblock g_color"><i class="icon-15"></i></div>
+                                                <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-1.png" alt=""></div>
+                                            </div>
+                                            <h4 class="d_block fs_20 lh_30 mb_4">We care of your Visa, Ticket, accommodation fees</h4>
+                                            <p class="mb_0">Once you pass our screening exercise and meet our terms and conditions. All your expenses ( Visa, Ticket, accommodation) is paid for by Junior Star Soccer and partners..</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                            <div class="image_block_two">
+                                <div class="image-box p_relative d_block ml_30 pb_140 mt_20">
+                                    <div class="shape parallax-scene parallax-scene-3">
+                                        <div data-depth="0.40" class="shape-1 p_absolute w_150 h_150 z_2" style="background-image: url(assets/images/shape/shape-17.png);"></div>
+                                        <div data-depth="0.50" class="shape-2 p_absolute w_95 h_95" style="background-image: url(assets/images/shape/shape-18.png);"></div>
+                                        <div data-depth="0.30" class="shape-3 p_absolute w_95 h_95" style="background-image: url(assets/images/shape/shape-18.png);"></div>
+                                    </div>
+                                    <figure class="image image-1 p_relative d_block b_radius_10"><img src="assets/images/resource/pic3.jpg" alt=""></figure>
+                                    <figure class="image image-2 p_absolute l_0 b_0 b_radius_10 d_block"><img src="assets/images/resource/pic1.jpg" alt="" style="width: 100%; height: 400px;"></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- chooseus-one end -->
+        <!-- process-one -->
+        <section class="process-one p_relative sec-pad text-center bg-color-1">
+            <div class="pattern-layer">
+                <div class="pattern-1 p_absolute t_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-9.png);"></div>
+                <div class="pattern-2 p_absolute t_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-10.png);"></div>
+                <div class="pattern-3 p_absolute r_0 b_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-11.png);"></div>
+                <div class="pattern-4 p_absolute r_0 b_0" data-parallax='{"x": 100}' style="background-image: url(assets/images/shape/shape-12.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="sec-title p_relative d_block mb_60">
+                    <span class="sub-title p_relative d_iblock fs_15 fw_medium g_color mb_19">Process</span>
+                    <h2 class="p_relative d_block fs_40 fw_bold mb_30">Always Work Done by The <br />Following Process</h2>
+                    <p>JUNIOR STAR SOCCER, has come to end frustration, depression and <br />crime from our community and society at large.</p>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12 processing-block">
+                        <div class="processing-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="shape p_absolute" style="background-image: url(assets/images/shape/shape-19.png);"></div>
+                                <div class="icon-box p_relative d_iblock w_170 h_170 lh_170 tran_5 b_radius_50 mb_30 z_1">
+                                    <div class="icon p_relative d_iblock tran_5 g_color fs_50"><i class="icon-17"></i></div>
+                                    <div class="hov-icon p_absolute l_0 t_0 r_0 w_170 h_170 lh_170 r_0 fs_50 tran_5"><i class="icon-16"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-9.png" alt=""></div>
+                                    <span class="count-box p_absolute d_iblock t_5 w_40 h_40 lh_40 b_radius_50 fs_18 fw_sbold z_1">1</span>
+                                </div>
+                                <h4 class="d_block fs_20 lh_30 mb_15">SCREENING EXERCISE</h4>
+                                <p>
+                                    In this process, the Junior Star Soccer team, will be able to select the good players, both grassroots and professionals side, to face the second phase of JSS. The screening exercise, will be carried out by our European top scout expert, to ensure credibility to her European top clubs allied.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 processing-block">
+                        <div class="processing-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="shape p_absolute" style="background-image: url(assets/images/shape/shape-19.png);"></div>
+                                <div class="icon-box p_relative d_iblock w_170 h_170 lh_170 tran_5 b_radius_50 mb_30 z_1">
+                                    <div class="icon p_relative d_iblock tran_5 g_color fs_50"><i class="icon-18"></i></div>
+                                    <div class="hov-icon p_absolute l_0 t_0 r_0 w_170 h_170 lh_170 r_0 fs_50 tran_5"><i class="icon-16"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-9.png" alt=""></div>
+                                    <span class="count-box p_absolute d_iblock t_5 w_40 h_40 lh_40 b_radius_50 fs_18 fw_sbold z_1">2</span>
+                                </div>
+                                <h4 class="d_block fs_20 lh_30 mb_15">FOOTBALL TOURNAMENT</h4>
+                                <p>In this process, the JSS team will then proceed to showcasing the selected players from the screened exercise by her experts (foreign coaches) to the European top club's allied, with a view of getting them signed. Where they leave the shores of Nigeria with a working contract as to maintain their dignity, honour and honesty.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 processing-block">
+                        <div class="processing-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="icon-box p_relative d_iblock w_170 h_170 lh_170 tran_5 b_radius_50 mb_30 z_1">
+                                    <div class="icon p_relative d_iblock tran_5 g_color fs_50"><i class="icon-19"></i></div>
+                                    <div class="hov-icon p_absolute l_0 t_0 r_0 w_170 h_170 lh_170 r_0 fs_50 tran_5"><i class="icon-16"></i></div>
+                                    <div class="icon-img hidden-icon"><img src="assets/images/icons/hid-icon-9.png" alt=""></div>
+                                    <span class="count-box p_absolute d_iblock t_5 w_40 h_40 lh_40 b_radius_50 fs_18 fw_sbold z_1">3</span>
+                                </div>
+                                <h4 class="d_block fs_20 lh_30 mb_15">REPRESENTATION</h4>
+                                <p>In this process, Junior Star Soccer legal representatives, shall take upon themselves to represent all her players in accordance with the provision of FIFA with the view to promote , showcase , negotiate and renegotiate the players rights and best interest to the World of soccer globally. This negotiation is not and will not be limited to the male gender alone, because we believe all BORN are BORN EQUAL.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- process-one end -->
+        <!-- skills-one -->
+        <section class="skills-one p_relative">
+            <div class="auto-container">
+                <div class="inner-container p_relative sec-pad">
+                    <div class="section-line">
+                        <div class="line line-1 p_absolute"></div>
+                        <div class="line line-2 p_absolute"></div>
+                        <div class="line line-3 p_absolute"></div>
+                    </div>
+                    <div class="row align-items-center clearfix">
+                        <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                            <div class="image_block_three">
+                                <div class="image-box p_relative d_block mr_30 pr_190 pt_90">
+                                    <div class="shape parallax-scene parallax-scene-4">
+                                        <div data-depth="0.50" class="shape-1 p_absolute w_65 h_65" style="background-image: url(assets/images/shape/shape-20.png);"></div>
+                                        <div data-depth="0.30" class="shape-2 p_absolute w_95 h_95" style="background-image: url(assets/images/shape/shape-18.png);"></div>
+                                    </div>
+                                    <figure class="image image-2 p_absolute t_0 r_0 b_radius_10"><img src="assets/images/resource/pic4.jpg" alt=""></figure>
+                                    <figure class="image image-1 p_relative d_block b_radius_10"><img src="assets/images/resource/pic7.jpg" alt=""></figure>
+                                    <div class="text p_absolute r_30 b_30 pt_25 pr_70 pl_30 pb_25 z_1">
+                                        <h4 class="p_relative d_block fs_20 lh_30 mb_0">The Best soccer Agency.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                            <div class="content_block_three">
+                                <div class="content-box p_relative d_block ml_30">
+                                    <div class="sec-title p_relative d_block mb_20">
+                                        <span class="sub-title p_relative d_iblock fs_15 fw_medium g_color mb_19">Expertise</span>
+                                        <h2 class="p_relative d_block fs_40 fw_bold mb_30">Make Your Dream Come True</h2>
+                                    </div>
+                                    <div class="text p_relative d_block mb_30 wow fadeInUp" data-wow-duration="1500ms">
+                                        <p>Growing soccer industry in Nigeria potentially</p>
+                                    </div>
+                                    <div class="progress-inner p_relative d_block wow fadeInUp" data-wow-duration="1500ms">
+                                        <div class="progress-box p_relative d_block mb_35">
+                                            <h6 class="d_block fs_16 lh_20 mb_7">Professionalism</h6>
+                                            <div class="bar">
+                                                <div class="bar-inner count-bar" data-percent="95%"></div>
+                                                <div class="count-text p_absolute r_0 b_10 fs_16">95%</div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-box p_relative d_block mb_35">
+                                            <h6 class="d_block fs_16 lh_20 mb_7">Excellent Delivery</h6>
+                                            <div class="bar">
+                                                <div class="bar-inner count-bar" data-percent="98%"></div>
+                                                <div class="count-text p_absolute r_0 b_10 fs_16">98%</div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-box p_relative d_block">
+                                            <h6 class="d_block fs_16 lh_20 mb_7">Efficient & Timely</h6>
+                                            <div class="bar">
+                                                <div class="bar-inner count-bar" data-percent="97%"></div>
+                                                <div class="count-text p_absolute r_0 b_10 fs_16">97%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- skills-one end -->
+        <!-- clients-one -->
+        <!--<section class="clients-one p_relative">
+            <div class="auto-container">
+                <div class="inner-container p_relative">
+                    <div class="section-line">
+                        <div class="line line-1 p_absolute"></div>
+                        <div class="line line-2 p_absolute"></div>
+                        <div class="line line-3 p_absolute"></div>
+                    </div>
+                    <div class="five-item-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
+                        <div class="clients-logo-box">
+                            <figure class="image"><a href="index.html"><img src="assets/images/clients/clients-logo-1.png" alt=""></a></figure>
+                            <figure class="overlay-image"><a href="index.html"><img src="assets/images/clients/clients-logo-1.png" alt=""></a></figure>
+                        </div>
+                        <div class="clients-logo-box">
+                            <figure class="image"><a href="index.html"><img src="assets/images/clients/clients-logo-2.png" alt=""></a></figure>
+                            <figure class="overlay-image"><a href="index.html"><img src="assets/images/clients/clients-logo-2.png" alt=""></a></figure>
+                        </div>
+                        <div class="clients-logo-box">
+                            <figure class="image"><a href="index.html"><img src="assets/images/clients/clients-logo-3.png" alt=""></a></figure>
+                            <figure class="overlay-image"><a href="index.html"><img src="assets/images/clients/clients-logo-3.png" alt=""></a></figure>
+                        </div>
+                        <div class="clients-logo-box">
+                            <figure class="image"><a href="index.html"><img src="assets/images/clients/clients-logo-4.png" alt=""></a></figure>
+                            <figure class="overlay-image"><a href="index.html"><img src="assets/images/clients/clients-logo-4.png" alt=""></a></figure>
+                        </div>
+                        <div class="clients-logo-box">
+                            <figure class="image"><a href="index.html"><img src="assets/images/clients/clients-logo-5.png" alt=""></a></figure>
+                            <figure class="overlay-image"><a href="index.html"><img src="assets/images/clients/clients-logo-5.png" alt=""></a></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <!-- clients-one end -->
+        <!-- testimonial-one -->
+        <!--<section class="testimonial-one p_relative">
+            <div class="auto-container">
+                <div class="inner-container p_relative pt_150 pb_140">
+                    <div class="section-line">
+                        <div class="line line-1 p_absolute"></div>
+                        <div class="line line-2 p_absolute"></div>
+                        <div class="line line-3 p_absolute"></div>
+                    </div>
+                    <div class="sec-title p_relative d_block mb_60 text-center z_1">
+                        <span class="sub-title p_relative d_iblock fs_15 fw_medium g_color mb_19">Testimonials</span>
+                        <h2 class="p_relative d_block fs_40 fw_bold mb_30">Trusted by More Than 3k Clients <br />Around The World</h2>
+                        <p>Amet consectur adipiscing elit sed eiusmod ex tempor incididunt <br />labore dolore aliquaenim minim veniam.</p>
+                    </div>
+                    <div class="three-item-carousel owl-carousel owl-theme owl-nav-none dots-style-one">
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="text p_relative d_block b_radius_10 pt_35 pr_40 pb_40 pl_40 mb_30">
+                                    <ul class="rating clearfix p_relative d_block mb_15">
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16"><i class="icon-20"></i></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor amet consectur elit adicing elit sed do usmod tempor ux incididunt enim ad minim veniam quis nostrud exer citation laboris nis aliquip comodo perspiatix.</p>
+                                </div>
+                                <div class="author p_relative d_block pl_90 pt_7 pb_11 ml_20">
+                                    <figure class="thumb-box p_absolute l_0 t_0 w_70 h_70 b_radius_50"><img src="assets/images/resource/testimonial-1.png" alt=""></figure>
+                                    <h4 class="d_block fs_20 lh_30 mb_2">Kevin Spacey</h4>
+                                    <span class="designation p_relative d_block fs_16 lh_20">Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="text p_relative d_block b_radius_10 pt_35 pr_40 pb_40 pl_40 mb_30">
+                                    <ul class="rating clearfix p_relative d_block mb_15">
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16"><i class="icon-20"></i></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor amet consectur elit dicing elit sed do usmod tempor ux incididunt enim ad minim veniam quis nostrud exer citation laboris nis aliquip comodo perspiatix unde omnis iste natus error sit voluptatem accusantium doloreque laudantum.</p>
+                                </div>
+                                <div class="author p_relative d_block pl_90 pt_7 pb_11 ml_20">
+                                    <figure class="thumb-box p_absolute l_0 t_0 w_70 h_70 b_radius_50"><img src="assets/images/resource/testimonial-2.png" alt=""></figure>
+                                    <h4 class="d_block fs_20 lh_30 mb_2">Nicolas Lawson</h4>
+                                    <span class="designation p_relative d_block fs_16 lh_20">Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="text p_relative d_block b_radius_10 pt_35 pr_40 pb_40 pl_40 mb_30">
+                                    <ul class="rating clearfix p_relative d_block mb_15">
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16"><i class="icon-20"></i></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor amet consectur elit adicing elit sed do usmod tempor quis incididunt enim.</p>
+                                </div>
+                                <div class="author p_relative d_block pl_90 pt_7 pb_11 ml_20">
+                                    <figure class="thumb-box p_absolute l_0 t_0 w_70 h_70 b_radius_50"><img src="assets/images/resource/testimonial-3.png" alt=""></figure>
+                                    <h4 class="d_block fs_20 lh_30 mb_2">Keanu Reeves</h4>
+                                    <span class="designation p_relative d_block fs_16 lh_20">Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="text p_relative d_block b_radius_10 pt_35 pr_40 pb_40 pl_40 mb_30">
+                                    <ul class="rating clearfix p_relative d_block mb_15">
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16"><i class="icon-20"></i></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor amet consectur elit adicing elit sed do usmod tempor ux incididunt enim ad minim veniam quis nostrud exer citation laboris nis aliquip comodo perspiatix.</p>
+                                </div>
+                                <div class="author p_relative d_block pl_90 pt_7 pb_11 ml_20">
+                                    <figure class="thumb-box p_absolute l_0 t_0 w_70 h_70 b_radius_50"><img src="assets/images/resource/testimonial-1.png" alt=""></figure>
+                                    <h4 class="d_block fs_20 lh_30 mb_2">Kevin Spacey</h4>
+                                    <span class="designation p_relative d_block fs_16 lh_20">Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="text p_relative d_block b_radius_10 pt_35 pr_40 pb_40 pl_40 mb_30">
+                                    <ul class="rating clearfix p_relative d_block mb_15">
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16"><i class="icon-20"></i></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor amet consectur elit dicing elit sed do usmod tempor ux incididunt enim ad minim veniam quis nostrud exer citation laboris nis aliquip comodo perspiatix unde omnis iste natus error sit voluptatem accusantium doloreque laudantum.</p>
+                                </div>
+                                <div class="author p_relative d_block pl_90 pt_7 pb_11 ml_20">
+                                    <figure class="thumb-box p_absolute l_0 t_0 w_70 h_70 b_radius_50"><img src="assets/images/resource/testimonial-2.png" alt=""></figure>
+                                    <h4 class="d_block fs_20 lh_30 mb_2">Nicolas Lawson</h4>
+                                    <span class="designation p_relative d_block fs_16 lh_20">Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="text p_relative d_block b_radius_10 pt_35 pr_40 pb_40 pl_40 mb_30">
+                                    <ul class="rating clearfix p_relative d_block mb_15">
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16"><i class="icon-20"></i></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor amet consectur elit adicing elit sed do usmod tempor quis incididunt enim.</p>
+                                </div>
+                                <div class="author p_relative d_block pl_90 pt_7 pb_11 ml_20">
+                                    <figure class="thumb-box p_absolute l_0 t_0 w_70 h_70 b_radius_50"><img src="assets/images/resource/testimonial-3.png" alt=""></figure>
+                                    <h4 class="d_block fs_20 lh_30 mb_2">Keanu Reeves</h4>
+                                    <span class="designation p_relative d_block fs_16 lh_20">Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="text p_relative d_block b_radius_10 pt_35 pr_40 pb_40 pl_40 mb_30">
+                                    <ul class="rating clearfix p_relative d_block mb_15">
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16"><i class="icon-20"></i></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor amet consectur elit adicing elit sed do usmod tempor ux incididunt enim ad minim veniam quis nostrud exer citation laboris nis aliquip comodo perspiatix.</p>
+                                </div>
+                                <div class="author p_relative d_block pl_90 pt_7 pb_11 ml_20">
+                                    <figure class="thumb-box p_absolute l_0 t_0 w_70 h_70 b_radius_50"><img src="assets/images/resource/testimonial-1.png" alt=""></figure>
+                                    <h4 class="d_block fs_20 lh_30 mb_2">Kevin Spacey</h4>
+                                    <span class="designation p_relative d_block fs_16 lh_20">Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="text p_relative d_block b_radius_10 pt_35 pr_40 pb_40 pl_40 mb_30">
+                                    <ul class="rating clearfix p_relative d_block mb_15">
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16"><i class="icon-20"></i></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor amet consectur elit dicing elit sed do usmod tempor ux incididunt enim ad minim veniam quis nostrud exer citation laboris nis aliquip comodo perspiatix unde omnis iste natus error sit voluptatem accusantium doloreque laudantum.</p>
+                                </div>
+                                <div class="author p_relative d_block pl_90 pt_7 pb_11 ml_20">
+                                    <figure class="thumb-box p_absolute l_0 t_0 w_70 h_70 b_radius_50"><img src="assets/images/resource/testimonial-2.png" alt=""></figure>
+                                    <h4 class="d_block fs_20 lh_30 mb_2">Nicolas Lawson</h4>
+                                    <span class="designation p_relative d_block fs_16 lh_20">Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-block-one">
+                            <div class="inner-box p_relative d_block">
+                                <div class="text p_relative d_block b_radius_10 pt_35 pr_40 pb_40 pl_40 mb_30">
+                                    <ul class="rating clearfix p_relative d_block mb_15">
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16 mr_5"><i class="icon-20"></i></li>
+                                        <li class="p_relative d_iblock pull-left fs_16"><i class="icon-20"></i></li>
+                                    </ul>
+                                    <p>Lorem ipsum dolor amet consectur elit adicing elit sed do usmod tempor quis incididunt enim.</p>
+                                </div>
+                                <div class="author p_relative d_block pl_90 pt_7 pb_11 ml_20">
+                                    <figure class="thumb-box p_absolute l_0 t_0 w_70 h_70 b_radius_50"><img src="assets/images/resource/testimonial-3.png" alt=""></figure>
+                                    <h4 class="d_block fs_20 lh_30 mb_2">Keanu Reeves</h4>
+                                    <span class="designation p_relative d_block fs_16 lh_20">Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <!-- testimonial-one -->
+        <!-- funfact-one -->
+        <!--<section class="funfact-one pt_90 pb_80 text-center p_relative">
+            <div class="shape parallax-scene parallax-scene-5">
+                <div data-depth="0.50" class="shape-1 p_absolute" style="background-image: url(assets/images/shape/shape-21.png);"></div>
+                <div data-depth="0.30" class="shape-2 p_absolute" style="background-image: url(assets/images/shape/shape-22.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 g_color fw_bold mb_17">
+                                    <span class="count-text" data-speed="2500" data-stop="90">0</span>
+                                </div>
+                                <p class="p_relative d_block fs_16 lh_20 fw_medium color_white">Successful projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 g_color fw_bold mb_17">
+                                    <span class="count-text" data-speed="2500" data-stop="2.6">0</span><span>M</span>
+                                </div>
+                                <p class="p_relative d_block fs_16 lh_20 fw_medium color_white">Satisfied Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="400ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 g_color fw_bold mb_17">
+                                    <span class="count-text" data-speed="2500" data-stop="35">0</span>
+                                </div>
+                                <p class="p_relative d_block fs_16 lh_20 fw_medium color_white">Experienced Staff</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 funfact-block">
+                        <div class="counter-block-one wow slideInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                            <div class="inner-box p_relative d_block">
+                                <div class="count-outer count-box p_relative d_block fs_70 lh_70 g_color fw_bold mb_17">
+                                    <span class="count-text" data-speed="2500" data-stop="10">0</span>
+                                </div>
+                                <p class="p_relative d_block fs_16 lh_20 fw_medium color_white">Awards Win</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <!-- funfact-one end -->
+        <!-- cta-one -->
+        <section class="cta-one p_relative pt_130 pb_140 centred">
+            <div class="bg-layer p_absolute l_0 parallax_none parallax-bg" data-parallax='{"y": 100}' style="background-image: url(assets/images/background/background1.jpg);"></div>
+            <div class="shape">
+                <div class="shape-1 hero-shape-three p_absolute z_1"></div>
+                <div class="shape-2 p_absolute l_0 b_0 z_1" style="background-image: url(assets/images/shape/shape-26.png);"></div>
+                <div class="shape-3 hero-shape-three p_absolute z_1"></div>
+                <div class="shape-4 p_absolute t_0 r_0 z_1" style="background-image: url(assets/images/shape/shape-16.png);"></div>
+            </div>
+            <div class="auto-container">
+                <div class="inner-box p_relative z_1">
+                    <h2 class="d_block fs_40 fw_bold mb_20">Need Help In Accomplishing your dream and Goal as a Footballer?</h2>
+                    <p class="fs_17 mb_35">We bring foreign investors to the desk of Nigeria to help grassroots, amateur, and <br />professionals footballers to professional soccer in Europe.</p>
+                    <a href="index.html" class="theme-btn theme-btn-two wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms"><span data-text="Get Started">Get Started</span></a>
+                </div>
+            </div>
+        </section>
+        <!-- cta-one end -->
+        <!-- news-one -->
+        <!--<section class="news-one p_relative">
+            <div class="auto-container">
+                <div class="inner-container p_relative sec-pad">
+                    <div class="section-line">
+                        <div class="line line-1 p_absolute"></div>
+                        <div class="line line-2 p_absolute"></div>
+                        <div class="line line-3 p_absolute"></div>
+                    </div>
+                    <div class="upper-box p_relative d_block z_1 pb_30">
+                        <div class="row align-items-center clearfix">
+                            <div class="col-lg-6 col-md-12 col-sm-12 title-column">
+                                <div class="sec-title p_relative d_block mb_20">
+                                    <span class="sub-title p_relative d_iblock fs_15 fw_medium g_color mb_19">Article</span>
+                                    <h2 class="p_relative d_block fs_40 fw_bold mb_0">Latest Articles</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 text-column">
+                                <div class="text p_relative d_block pl_100">
+                                    <p class="fs_18">Our design services starts and ends with a best-in-class experience strategy that builds brands.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                            <div class="news-block-one wow slideInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                <div class="inner-box p_relative d_block b_radius_10 b_shadow_6">
+                                    <div class="image-box p_relative d_block">
+                                        <figure class="image p_relative d_block"><a href="blog-details.html"><img src="assets/images/news/news-1.jpg" alt=""></a></figure>
+                                        <div class="post-date p_absolute l_30 t_30 b_shadow_6 pt_1 pr_19 pb_1 pl_19 z_1">
+                                            <h6 class="p_relative d_iblock fs_15 fw_medium g_color">Oct 20, 2021</h6>
+                                        </div>
+                                    </div>
+                                    <div class="lower-content p_relative d_block pt_30 pr_30 pb_40 pl_40">
+                                        <ul class="post-info clearfix p_relative d_block mb_5">
+                                            <li class="p_relative d_iblock float_left mr_30 fs_16"><a href="blog-details.html">Ashley Bronks</a></li>
+                                            <li class="p_relative d_iblock float_left fs_16">10 mins Read</li>
+                                        </ul>
+                                        <h4 class="d_block fs_20 lh_30 mb_15"><a href="blog-details.html">Unsatiable Entreaties May Collecting Power.</a></h4>
+                                        <p class="d_block mb_20">Lorem ipsum dolor sit amet consectur adipisicing sed.</p>
+                                        <div class="btn-box">
+                                            <a href="blog-details.html" class="theme-btn theme-btn-two"><span data-text="Learn More">Learn More</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                            <div class="news-block-one wow slideInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <div class="inner-box p_relative d_block b_radius_10 b_shadow_6">
+                                    <div class="image-box p_relative d_block">
+                                        <figure class="image p_relative d_block"><a href="blog-details.html"><img src="assets/images/news/news-2.jpg" alt=""></a></figure>
+                                        <div class="post-date p_absolute l_30 t_30 b_shadow_6 pt_1 pr_19 pb_1 pl_19 z_1">
+                                            <h6 class="p_relative d_iblock fs_15 fw_medium g_color">Oct 15, 2021</h6>
+                                        </div>
+                                    </div>
+                                    <div class="lower-content p_relative d_block pt_30 pr_30 pb_40 pl_40">
+                                        <ul class="post-info clearfix p_relative d_block mb_5">
+                                            <li class="p_relative d_iblock float_left mr_30 fs_16"><a href="blog-details.html">Ashley Bronks</a></li>
+                                            <li class="p_relative d_iblock float_left fs_16">10 mins Read</li>
+                                        </ul>
+                                        <h4 class="d_block fs_20 lh_30 mb_15"><a href="blog-details.html">Need Help Finding The Best Solution.</a></h4>
+                                        <p class="d_block mb_20">Lorem ipsum dolor sit amet consectur adipisicing sed.</p>
+                                        <div class="btn-box">
+                                            <a href="blog-details.html" class="theme-btn theme-btn-two"><span data-text="Learn More">Learn More</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 news-block">
+                            <div class="news-block-one wow slideInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div class="inner-box p_relative d_block b_radius_10 b_shadow_6">
+                                    <div class="image-box p_relative d_block">
+                                        <figure class="image p_relative d_block"><a href="blog-details.html"><img src="assets/images/news/news-3.jpg" alt=""></a></figure>
+                                        <div class="post-date p_absolute l_30 t_30 b_shadow_6 pt_1 pr_19 pb_1 pl_19 z_1">
+                                            <h6 class="p_relative d_iblock fs_15 fw_medium g_color">Oct 12, 2021</h6>
+                                        </div>
+                                    </div>
+                                    <div class="lower-content p_relative d_block pt_30 pr_30 pb_40 pl_40">
+                                        <ul class="post-info clearfix p_relative d_block mb_5">
+                                            <li class="p_relative d_iblock float_left mr_30 fs_16"><a href="blog-details.html">Ashley Bronks</a></li>
+                                            <li class="p_relative d_iblock float_left fs_16">10 mins Read</li>
+                                        </ul>
+                                        <h4 class="d_block fs_20 lh_30 mb_15"><a href="blog-details.html">Make Your Dream Come True & Great Number</a></h4>
+                                        <p class="d_block mb_20">Lorem ipsum dolor sit amet consectur adipisicing sed.</p>
+                                        <div class="btn-box">
+                                            <a href="blog-details.html" class="theme-btn theme-btn-two"><span data-text="Learn More">Learn More</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <!-- news-one end -->
+        <!-- footer-one -->
+        <footer class="footer-one">
+
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="bottom-inner clearfix">
+                        <div class="copyright pull-left">
+                            <p><a href="index.html">JUNIOR STAR SOCCER</a> &copy; 2022 All Right Reserved</p>
+                        </div>
+                        <ul class="footer-nav clearfix pull-right">
+                            <li><a href="index.html">Terms of Service</a></li>
+                            <li><a href="index.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-one end -->
+        <!--Scroll to top-->
+        <div class="scroll-to-top">
+            <div>
+                <div class="scroll-top-inner">
+                    <div class="scroll-bar">
+                        <div class="bar-inner"></div>
+                    </div>
+                    <div class="scroll-bar-text g_color">Go To Top</div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll to top end -->
+
+
+    </div>
+
+
+    <!-- jequery plugins -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/scrollbar.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/circle-progress.js"></script>
+    <script src="assets/js/jquery.countTo.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+
+    <!-- main-js -->
+    <script src="assets/js/script.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/62bf29e57b967b1179979236/1g6tbnalh';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+
+        //For the pop up
+        window.addEventListener("load", function() {
+            setTimeout(
+                function open(event){
+                    document.querySelector(".bigBackground").style.display="block";
+                },
+                5000
+            )
+
+            
+        });
+        document.querySelector("#times").addEventListener("click", function() {
+            document.querySelector(".bigBackground").style.display="none";
+        });
+        window.addEventListener("click", function(){
+            document.querySelector(".bigBackground").style.display="none";
+        })
+    </script>
+    <!--End of Tawk.to Script-->
+</body><!-- End of .page_wrapper -->
+
+</html>
